@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Gugi', cursive;
+  font-size: 30px;
+  color: #0033cc;
+  border: 1px #0033cc solid;
+  padding: 30px;
+}
+
+.counter {
+  width: 100%;
+}
