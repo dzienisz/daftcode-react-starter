@@ -1,14 +1,22 @@
 import { hot } from 'react-hot-loader';
-import * as React from 'react';
+import React, { Component } from 'react';
 
+import launch from './assets/sample_json_data/launch.json';
+import launchSite from './assets/sample_json_data/launch_site.json';
+import rocket from './assets/sample_json_data/rocket.json';
 import './styles/theme.sass';
-import Counter from './view/Counter';
 
-class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
+import LaunchDetails from './view/LaunchDetails/LaunchDetails';
+
+class App extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <main>
-        <Counter from={ 68 } to={ 0 } />
+        <LaunchDetails
+          launch={launch}
+          launchSite={launchSite}
+          rocket={rocket}
+        />
       </main>
     );
   }
