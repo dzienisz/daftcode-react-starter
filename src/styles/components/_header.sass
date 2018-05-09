@@ -1,0 +1,42 @@
+.header
+    background: $almostBlack;
+    height: 70px;
+
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        justify-content: center;
+        position: relative;
+
+    &__go-back-wrapper
+        display: flex
+        align-items: center
+        position: absolute
+        left: 0
+        margin: 0 40px;
+        
+    &__arrow-line
+        border: 1px solid $accent
+        display: inline-block
+        height: 2px
+        margin: 0 20px 0 -1px
+        width: 30px
+        @include mobile
+            display: none
+
+    &__back
+        @include mobile
+            display: none
+        @include tablet
+            display: none   
+
+    &__logo
+        max-width: 300px
+        margin: 0 40px
+
+    &__placeholder
+        max-width: 160px
+
+
+
