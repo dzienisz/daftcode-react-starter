@@ -2,16 +2,19 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "env": {
-      "browser": true,
-      "es6": true
+    "browser": true,
+    "es6": true
   },
   "rules": {
-    "no-console": "error", // airbnb is using warn
-    "no-return-assign": "off", // airbnb use error, handy for react ref assign.
-    "operator-linebreak": ["error", "after"], // aibnb is disabling this rule
-    "react/jsx-filename-extension": ["error", {"extensions": [".js"]}], // airbnb is using .jsx
-    "react/jsx-max-props-per-line": ["error", {"maximum": 3}], // airbnb is disabling this rule
-    "react/no-danger": "error", // airbnb is using warn
-    "react/no-direct-mutation-state": "error" // airbnb is disabling this rule
+    "no-console": "error",
+    "no-return-assign": "off",
+    "operator-linebreak": ["error", "after"],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 3 }],
+    "react/no-danger": "error",
+    "react/no-direct-mutation-state": "error",
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [0, "error", "windows"]
   }
 }
