@@ -1,4 +1,4 @@
-import React, { Comopnent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class LaunchDetails extends Component {
