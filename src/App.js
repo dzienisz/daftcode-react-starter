@@ -8,10 +8,10 @@ import './styles/theme.sass';
 
 import LaunchDetails from './view/LaunchDetails/LaunchDetails';
 
-class App extends Component { // eslint-disable-line react/prefer-stateless-function
+class App extends Component {
   render() {
     return (
-      <main>
+      <main className="page-container">
         <LaunchDetails
           launch={launch}
           launchSite={launchSite}
