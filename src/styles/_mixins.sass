@@ -12,3 +12,10 @@ $desktop-width: 1024px
 @mixin desktop 
     @media (min-width: #{$desktop-width}) 
         @content
+        
+$page-max-width: 1440px
+
+%page-center
+    max-width: $page-max-width
+    margin-left: auto
+    margin-right: auto
