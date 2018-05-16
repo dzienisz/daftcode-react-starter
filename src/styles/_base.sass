@@ -1,0 +1,47 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  color: $darkGrey
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  font-weight: 300
+  line-height: 20px
+
+body
+  margin: 0
+  padding: 0
+
+.page
+  &-container
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+  &-content
+    flex: 1
+
+  &-footer
+    flex: 0 0
+
+.container
+  height: 100%
+  margin: 0 auto
+  max-width: 1200px
+  padding: 0 40px
+
+.title
+  color: $accent
+  font-size: 14px
+  font-weight: 600
+  letter-spacing: 8px
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+#{$a-tags}
+  text-decoration: none
+
+#{$a-tags-hover}

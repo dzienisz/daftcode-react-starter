@@ -1,9 +1,9 @@
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 
 import "./Counter.scss"
 
-class Counter extends React.Component {
+class Counter extends Component {
   static propTypes = {
     from: PropTypes.number.isRequired,
     to: PropTypes.number.isRequired,
