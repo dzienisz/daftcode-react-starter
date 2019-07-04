@@ -9,13 +9,16 @@
     "build": "webpack --config webpack.config.prod.js",
     "serve": "serve dist",
     "lint": "eslint src",
-    "gh-pages": "git subtree push --prefix dist origin gh-pages"
+    "gh-pages": "git subtree push --prefix dist origin gh-pages",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
-    "react-hot-loader": "^4.0.1"
+    "react-hot-loader": "^4.0.1",
+    "snyk": "^1.190.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",
@@ -45,5 +48,6 @@
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.1"
-  }
+  },
+  "snyk": true
 }
